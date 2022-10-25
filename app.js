@@ -31,11 +31,6 @@ for (let i = 0; i <= 20; i++) {
 };
 
 const peopleJSON = JSON.stringify(people);
-JSON.parse(peopleJSON);
-
-console.log(peopleJSON);
-
-
 
 fs.writeFile('people.json', peopleJSON, (err) => {
   if (err) throw err;
